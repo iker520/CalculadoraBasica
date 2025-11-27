@@ -30,6 +30,8 @@ public class Main {
                 System.out.println("2. Restar");
                 System.out.println("3. Multiplicar");
                 System.out.println("4. Dividir");
+                System.out.println("5. Mcd");
+                System.out.println("6. Mcm");
                 System.out.println("Otro numero. Salir");
                 opcion = sc.nextInt();
                 switch (opcion) {
@@ -45,6 +47,12 @@ public class Main {
                     case 4:
                         System.out.println("Resultado: " + calcular.dividir(num1, num2));
                         break;
+                    case 5:
+                        System.out.println("Resultado MCD: " + calcular.mcd((int)num1, (int)num2));
+                        break;
+                    case 6:
+                        System.out.println("Resultado MCM: " + calcular.mcm((int)num1, (int)num2));
+                        break;
                 }
             } catch (ArithmeticException e) {
                 System.out.println("Sintax Error");
@@ -56,7 +64,7 @@ public class Main {
                 System.out.println("Error");
                 sc.nextLine();
             }
-        } while (opcion == 1 | opcion == 2 | opcion == 3 | opcion == 4);
+        } while (opcion == 1 | opcion == 2 | opcion == 3 | opcion == 4 | opcion == 5 | opcion == 6);
         sc.close();
     }
 }
