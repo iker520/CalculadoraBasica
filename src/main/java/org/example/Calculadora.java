@@ -1,12 +1,16 @@
 package org.example;
 
 public class Calculadora {
-
-    public int sumar(int a, int b) {
+    public double sumar(double a, double b) {
         return a + b;
     }
-
-    public int restar(int a, int b) {
+    public double restar(double a, double b) {
         return a - b;
+    }
+    public double multiplicar(double a, double b) {
+        return a * b;
+    }
+    public double dividir(double a, double b) {
+        return a / b;
     }
 }
