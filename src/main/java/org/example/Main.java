@@ -37,6 +37,7 @@ public class Main {
             } catch (ArithmeticException e) {
                 System.out.println("Sintax Error");
                 sc.nextLine();
+                //Imprime Sintax error si se cumple la excepcion
             } catch (Exception e) {
                 System.out.println("Error");
                 sc.nextLine();
