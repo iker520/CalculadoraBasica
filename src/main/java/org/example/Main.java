@@ -61,7 +61,7 @@ public class Main {
                 System.out.println("Error: ingresa numeros, no letras.");
                 sc.nextLine();
             } catch (Exception e) {
-                System.out.println("Error");
+                System.out.println("Error"); //imprime error
                 sc.nextLine();
             }
         } while (opcion == 1 | opcion == 2 | opcion == 3 | opcion == 4 | opcion == 5 | opcion == 6);
