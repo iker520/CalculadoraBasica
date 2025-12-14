@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
         Calculadora calcular = new Calculadora();
         int opcion=0, num1=0, num2=0;
@@ -41,6 +40,7 @@ public class Main {
             } catch (Exception e) {
                 System.out.println("Error");
                 sc.nextLine();
+                //Imprime error si se cumple la excepcion
             }
         } while (opcion == 1 | opcion == 2);
         sc.close();
